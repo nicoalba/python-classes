@@ -1,16 +1,14 @@
-# Datat metrics for hair salon
-
 hairstyles = ["bouffant", "pixie", "dreadlocks", "crew", "bowl", "bob", "mohawk", "flattop"]
 prices = [30, 25, 40, 20, 20, 35, 50, 35]
 last_week = [2, 3, 5, 8, 4, 4, 6, 2]
 
 ## Find average price for a cut
-total_price = [0]
+total_price = 0
 
 for item in prices:
-  total_price.append(item)
+  total_price += item
+average_price = total_price / len(prices)
 
-average_price = sum(total_price) / len(prices)
 print("Average haircut price : " + str(average_price))
 
 ## Cut prices by 5
