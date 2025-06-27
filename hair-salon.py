@@ -8,6 +8,7 @@ total_price = 0
 for item in prices:
   total_price += item
 average_price = total_price / len(prices)
+### easier to just use "total_price = sum(prices)"
 
 print("Average haircut price : " + str(average_price))
 
